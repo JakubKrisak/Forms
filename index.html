@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body {
+
+            background-color: aliceblue;
+            margin: 30px 30px;
+            
+        }
+
+        #form1 {
+            border-radius: 10px; 
+            background-color: #B36ECF; 
+            padding: 15px;
+            margin-bottom: 100px;
+            width: 50%;
+        }
+
+        #hform1 {
+
+            margin: 0px 0px;
+            margin-bottom: 15px;
+            color: white;
+
+        }
+
+        input, label {
+            margin-left: 0px;
+            margin-right: 0px;
+            width: 100%;
+            display: block;
+            box-sizing: border-box;
+            
+        }
+
+        #form2 {
+            border-radius: 10px;
+            background-color: #3B5998;
+            width: 40%;
+            padding: 20px 25px;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+           
+        }
+
+        #hform2 {
+            text-align: center;
+            margin: 0px 0px;
+            margin-bottom: 15px;
+            color: white;
+
+        }
+
+        #login {
+            color: white;
+            background-color: #B36ECF;
+            margin-top: 5px;
+            padding: 7px 0px;
+            border: 0px;
+            width: 100%;
+            
+            margin-left: 0px;
+            
+        }
+
+        p {
+            text-align: center;
+            color: white;
+        }
+
+        
+
+    </style>
+
+</head>
+<body>
+    
+    <form action="" id="form1">
+
+        <h1 id="hform1">HEADING FOR FORM</h1>
+
+        <label for="fname">First name: </label>
+        <input placeholder="First name:" type="text" id="fname" name="fname" required>
+        <label for="lname">Last name: </label>
+        <input placeholder="Last name: " type="text" id="lname" name="lname" required>
+        <label for="email">Email: </label>
+        <input placeholder="Email: " type="email" id="email" name="email" required>
+        <label for="tel">Telephone: </label>
+        <input placeholder="1234-456-789" type="tel" name="tel" id="tel" pattern="[0-9]{4} [0-9]{3} [0-9]{3}" required>
+        <br>
+        <input type="submit" name="submit" value="Submit">
+    </form>
+
+    <form action="" id="form2">
+
+        <h1 id="hform2">facebook</h1>
+
+        <input placeholder="Email" type="email" name="email" required>
+        <input placeholder="Password" type="password" name="password" required>
+
+        <input onclick="alert('Loading...')" type="submit" id="login" name="submit" value="Log In">
+        <br><br><br><br><br><br>
+        <p>Sign Up for facebook</p>
+        <p>Need Help?</p>
+
+    </form>
+
+</body>
+</html>
